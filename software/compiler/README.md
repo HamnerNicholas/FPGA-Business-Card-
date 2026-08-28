@@ -792,9 +792,9 @@ Complex expressions that require more than the available registers therefore pro
 
 ---
 
-# Special Register File Usage
+# Subroutine Register File Usage
 
-The compiler relies on the CPU's Special Register File for function support.
+The compiler relies on the CPU's Subroutine Register File for function support.
 
 Current convention:
 
