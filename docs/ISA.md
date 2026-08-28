@@ -439,7 +439,7 @@ Subop:
 01
 ```
 
-Interrupt-related control instruction.
+Returns from the interrupt routine.
 
 ---
 
@@ -464,7 +464,7 @@ Subop:
 00
 ```
 
-Branches to the immediate address when the equality condition is satisfied.
+Branches to the immediate address when the equality condition: rX == acc, is satisfied.
 
 Example:
 
@@ -486,7 +486,7 @@ Subop:
 01
 ```
 
-Branches when the inequality condition is satisfied.
+Branches when the inequality condition: rX != acc, is satisfied.
 
 ---
 
@@ -502,7 +502,7 @@ Subop:
 10
 ```
 
-Branches when the selected register satisfies the CPU's less-than comparison condition.
+Branches when the selected register satisfies the CPU's less-than comparison condition: rX < acc.
 
 Example:
 
