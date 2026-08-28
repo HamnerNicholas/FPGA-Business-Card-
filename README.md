@@ -7,8 +7,8 @@ The project combines custom processor architecture, FPGA RTL, a custom instructi
 The card executes real machine code on the custom CPU and calculates prime numbers at runtime, displaying each result in binary using eight onboard LEDs.
 
 <p align="center">
-  <img src="images/pcb-front.png" width="48%">
-  <img src="images/pcb-back.png" width="48%">
+  <img src="hardware/pcb/PCB_Front.PNG" width="48%">
+  <img src="hardware/pcb/PCB_Back.PNG" width="48%">
 </p>
 
 ---
