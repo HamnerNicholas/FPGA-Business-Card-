@@ -367,7 +367,7 @@ Subop:
 01
 ```
 
-Outputs an ASCII value through the TTY interface.
+Outputs the current accumulator value through the TTY interface.
 
 The compiler's numeric printing routine uses `ttya` after converting a number into ASCII.
 
