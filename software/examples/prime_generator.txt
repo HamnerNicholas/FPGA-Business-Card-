@@ -1,0 +1,47 @@
+let n = 2
+let divisor = 2
+let remainder = 0
+let isPrime = 1
+let run = 0
+
+while run < 1
+
+    n = 2
+
+    while n < 100
+
+        divisor = 2
+        isPrime = 1
+
+        while divisor < n
+
+            remainder = n
+
+            while divisor < remainder
+                remainder = remainder - divisor
+            ewhile
+
+            if remainder == divisor
+                remainder = 0
+            endif
+
+            if remainder == 0
+                isPrime = 0
+            endif
+
+            divisor = divisor + 1
+
+        ewhile
+
+        if isPrime == 1
+            asm = {
+                load 0
+                storeio 0
+            }
+        endif
+
+        n = n + 1
+
+    ewhile
+
+ewhile
