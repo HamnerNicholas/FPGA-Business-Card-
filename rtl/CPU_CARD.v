@@ -172,20 +172,6 @@ module CPU_CARD #(
     // ============================================================
     // ALU
     // ============================================================
-    //
-    // Your ALU already handles both ALUI and ALU correctly:
-    //
-    // ALU = 0:
-    //     second operand = immediate
-    //
-    // ALU = 1:
-    //     second operand = accumulator
-    //
-    // Therefore:
-    //
-    // ALUI instruction -> ALU signal is 0 -> immediate arithmetic
-    // ALU  instruction -> ALU signal is 1 -> register/ACC arithmetic
-    //
 
     ALU #(
         .REG_WIDTH(DATA_WIDTH),
@@ -207,7 +193,7 @@ module CPU_CARD #(
     // ============================================================
     //
     // The full CPU accumulator still has ports for IO and JAL.
-    // Those features don't exist on the card, so tie them off.
+    // Those features don't exist on the card
     //
 
     ACCUMULATOR_REGISTER #(
