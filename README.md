@@ -1,24 +1,29 @@
 # FPGA CPU Business Card
 
-A fully functional **8-bit custom CPU implemented on an Intel/Altera MAX 10 FPGA and integrated into a 6-layer PCB business card**.
+A fully functional **custom 8-bit CPU implemented on an Intel/Altera MAX 10 FPGA and integrated into a 6-layer PCB business card**.
 
-The project combines custom processor architecture, FPGA RTL, a custom instruction set, assembler, compiler, and PCB design into a standalone embedded system.
+Designed from the processor architecture up, the project includes a custom **16-bit ISA, Verilog RTL, assembler, compiler, power system, and custom PCB**. The finished card runs entirely standalone from a CR2032 battery and boots directly from the MAX 10's internal configuration flash.
 
-The card executes real machine code on the custom CPU and calculates prime numbers at runtime, displaying each result in binary using eight onboard LEDs.
+The default firmware **calculates prime numbers at runtime on the custom CPU** and displays each result in binary across eight onboard LEDs.
 
 <p align="center">
-  <img src="hardware/pcb/PCB_Front.PNG" width="48%">
-  <img src="hardware/pcb/PCB_Back.PNG" width="48%">
+  <img src="images/card-front.jpg" width="48%">
+  <img src="images/card-back.jpg" width="48%">
+</p>
+
+<p align="center">
+  <b>Rev A — Fabricated, assembled, programmed, and hardware validated.</b>
 </p>
 
 ---
 
 ## Overview
 
-The FPGA CPU Business Card is a physical implementation of a custom accumulator-based processor.
+This project explores the complete path from a high-level programming language to a physical processor implementation.
 
-The complete development flow spans from a high-level programming language down to the PCB:
+Rather than using a soft-core processor or existing CPU architecture, the card implements a processor designed specifically for this project. Programs can be written in the custom high-level language, compiled into the custom assembly language, assembled into 16-bit machine code, and executed directly by the CPU implemented in FPGA logic.
 
+The complete development flow spans from software to silicon:
 ```text
 High-Level Program
         |
